@@ -28,10 +28,12 @@ Inspiration is drawn from the concentric geometry of historical temple reliefs, 
 
 The cryptographic space operates on a two-dimensional polar projection plane $\mathcal{M}$ defined by public base parameters $M_0 = \{R_1, R_2, S\}$. The private key spaces use continuous, non-linear transformations based on hyperbolic functions:
 
-$$\mathcal{T}_k(M_0) \to \mathcal{M}_k = \left\{ R_1 \cdot \frac{\sinh(k)}{10}, R_2 \cdot \frac{\cosh(k)}{10}, (k \cdot \pi) \pmod{2\pi} \right\}$$
+```math
+\(\mathcal{T}_k(M_0) \to \mathcal{M}_k = \left\{ R_1 \cdot \frac{\sinh(k)}{10}, R_2 \cdot \frac{\cosh(k)}{10}, (k \cdot \pi) \pmod{2\pi} \right\)自
+```
 
 Reversing this transformation represents an NP-hard problem defined as the **Discrete Logarithm Problem on Fractal Surfaces**, rendering Shor's period-finding algorithm useless due to the non-abelian, infinite-dimensional group properties of the orbit space.
----
+
 
 ## 📦 Project Structure
 
